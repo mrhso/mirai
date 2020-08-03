@@ -110,7 +110,6 @@ internal fun MessageChain.toRichTextElems(forGroup: Boolean, withGeneralFlags: B
             }
             is At -> {
                 elements.add(ImMsgBody.Elem(text = it.toJceData()))
-                elements.add(ImMsgBody.Elem(text = ImMsgBody.Text(str = " ")))
             }
             is PokeMessage -> {
                 elements.add(
