@@ -67,12 +67,9 @@ private constructor(
         fun _lowLevelConstructAtInstance(target: Long, display: String): At = At(target, display)
     }
 
-    // 自动为消息补充 " "
+    // 空格交给用家去处理
     override fun followedBy(tail: Message): MessageChain {
-        if (tail is PlainText && tail.content.startsWith(' ')) {
-            return super<MessageContent>.followedBy(tail)
-        }
-        return super<MessageContent>.followedBy(PlainText(" ")) + tail
+        return super<MessageContent>.followedBy(tail)
     }
 
     override fun hashCode(): Int {
