@@ -5,19 +5,19 @@
 
 ----
 
-[![Gitter](https://badges.gitter.im/mamoe/mirai.svg)](https://gitter.im/mamoe/mirai?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-![Gradle CI](https://github.com/mamoe/mirai/workflows/Gradle%20CI/badge.svg?branch=master)
-[![Download](https://api.bintray.com/packages/him188moe/mirai/mirai-core/images/download.svg)](https://bintray.com/him188moe/mirai/mirai-core/)  
-
 Mirai 是一个在全平台下运行，提供 QQ Android 和 TIM PC 协议支持的高效率机器人库
 
-这个项目的名字来源于
+Mirai-moritaka 为 Ishisashi 维护的分支。
+
+原项目的名字来源于
      <p><a href = "http://www.kyotoanimation.co.jp/">京都动画</a>作品<a href = "https://zh.moegirl.org/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9">《境界的彼方》</a>的<a href = "https://zh.moegirl.org/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5">栗山未来(Kuriyama <b>Mirai</b>)</a></p>
      <p><a href = "https://www.crypton.co.jp/">CRYPTON</a>以<a href = "https://www.crypton.co.jp/miku_eng">初音未来</a>为代表的创作与活动<a href = "https://magicalmirai.com/2019/index_en.html">(Magical <b>Mirai</b>)</a></p>
 图标以及形象由画师<a href = "https://github.com/DazeCake">DazeCake</a>绘制
+
+该分支的名称来源于《东京放课后》的犬冢戍孝（<ruby>犬塚<rp>（</rp><rt>Inuzuka</rt><rp>）</rp>モリタカ<rp>（</rp><rt>Moritaka</rt><rp>）</rp></ruby>）。
 </div>
 
-## Mirai
+## Mirai-moritaka
 
 **[English](README-eng.md)**  
 
@@ -25,11 +25,6 @@ Mirai 是一个在全平台下运行，提供 QQ Android 和 TIM PC 协议支持
 **QQ Android** 协议支持库与高效率的机器人框架   
 纯 Kotlin 实现协议和支持库    
 mirai 既可以作为项目中的 QQ 协议支持库, 也可以作为单独的应用程序与插件承载 QQ 机器人服务。  
-
-## **一切开发旨在学习，请勿用于非法用途**
-
-加入 [![Gitter](https://badges.gitter.im/mamoe/mirai.svg)](https://gitter.im/mamoe/mirai?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge), 或加入 QQ 群: 
-群：655057127
 
 ## 协议支持
 
@@ -81,8 +76,7 @@ mirai 既可以作为项目中的 QQ 协议支持库, 也可以作为单独的�
 - **快速上手**：[quickstart](docs/guide_quick_start.md)
 - **开发文档**：[docs/mirai.md](docs/mirai.md)
 - **常见问题**: [docs/FAQ.md](docs/FAQ.md)
-- **更新日志**: [CHANGELOG](https://github.com/mamoe/mirai/blob/master/CHANGELOG.md) 或 [release](https://github.com/mamoe/mirai/releases)
-- **开发计划**: [milestones](https://github.com/mamoe/mirai/milestones)
+- **更新日志**: [CHANGELOG](https://github.com/mrhso/mirai/blob/moritaka/CHANGELOG.md)
 - **贡献**: [CONTRIBUTING](CONTRIBUTING.md)
 
 ### 开发者
