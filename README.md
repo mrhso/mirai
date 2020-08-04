@@ -1,24 +1,23 @@
 <div align="center">
-   <img width="160" src="docs/mirai.png" alt="logo"></br>
+<img width="160" src="docs/mirai.png" alt="logo"></br>
+<img width="95" src="docs/mirai.svg" alt="title">
 
-   <img width="95" src="docs/mirai.svg" alt="title">
-
-----
+---
 
 Mirai 是一个在全平台下运行，提供 QQ Android 协议支持的高效率机器人库。
 
 Mirai-moritaka 为 Ishisashi 维护的分支。因为含有 Ishisashi 自身的想法，因此单列分支。
 
 原项目的名字来源于
-     <p><a href = "http://www.kyotoanimation.co.jp/">京都动画</a>作品<a href = "https://zh.moegirl.org/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9">《境界的彼方》</a>的<a href = "https://zh.moegirl.org/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5">栗山未来（Kuriyama <b>Mirai</b>）</a>、</p>
-     <p><a href = "https://www.crypton.co.jp/">CRYPTON</a> 以<a href = "https://www.crypton.co.jp/miku_eng">初音未来</a>为代表的创作与活动<a href = "https://magicalmirai.com/2019/index_en.html">（Magical <b>Mirai</b>）</a>。</p>
+<p><a href = "http://www.kyotoanimation.co.jp/">京都动画</a>作品<a href = "https://zh.moegirl.org/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9">《境界的彼方》</a>的<a href = "https://zh.moegirl.org/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5">栗山未来（Kuriyama <b>Mirai</b>）</a>、</p>
+<p><a href = "https://www.crypton.co.jp/">CRYPTON</a> 以<a href = "https://www.crypton.co.jp/miku_eng">初音未来</a>为代表的创作与活动<a href = "https://magicalmirai.com/2019/index_en.html">（Magical <b>Mirai</b>）</a>。</p>
 图标以及形象由画师 <a href = "https://github.com/DazeCake">DazeCake</a> 绘制。
 
 该分支的名称来源于《东京放课后》的犬冢戍孝（<ruby>犬塚<rp>（</rp><rt>Inuzuka</rt><rp>）</rp>モリタカ<rp>（</rp><rt>Moritaka</rt><rp>）</rp></ruby>）。
 </div>
 
 ## Mirai-moritaka
-**[English](README-eng.md)**  
+**[English](README-eng.md)**
 
 **QQ Android** 协议支持库与高效率的机器人框架。
 
@@ -28,39 +27,38 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 
 ## 协议支持
 <details>
-  <summary>支持的协议列表</summary>
+<summary>支持的协议列表</summary>
 
-| 消息相关                    | 支持              |
-|:----------------------|:----------------|
-| 文字                  | 群聊 \| 好友 \| 临时会话 |
-| 原生表情                  | 群聊 \| 好友 \| 临时会话 |
-| 图片上传、发送、解析（最大 20 MiB）           | 群聊 \| 好友 \| 临时会话 |
-| 图片下载           | 群聊 \| 好友 \| 临时会话 |
-| XML、JSON 等富文本消息           | 群聊 \| 好友 \| 临时会话 |
-| 长消息 (5000 字符 + 50 图片) | 群聊               |
-| 引用回复                  | 群聊 \| 好友 \| 临时会话 |
-| 合并转发 (最大 200 条)                  | 群聊  |
-| 撤回                  | 群聊 \| 好友 \| 临时会话 |
-| At（含 At 全体成员）                  | 群聊 |
-| 撤回群员消息                  | 群聊 |
+|消息相关|支持|
+|:-|:-|
+|文字|群聊、好友、临时会话|
+|原生表情|群聊、好友、临时会话|
+|图片上传、发送、解析（最大 20 MiB）|群聊、好友、临时会话|
+|图片下载|群聊、好友、临时会话|
+|XML、JSON 等富文本消息|群聊、好友、临时会话|
+|长消息（5000 字符、50 图片）|群聊|
+|引用回复|群聊、好友、临时会话|
+|合并转发（最大 200 条）|群聊|
+|撤回|群聊、好友、临时会话|
+|At（含 At 全体成员）|群聊|
+|撤回群员消息|群聊|
 
-| 群相关                    |
-|:----------------------|
-| 完整群列表、完整群成员列表|
-| 群员权限获取|
-| 禁言群员、全员禁言、禁言时间获取|
-| 群公告管理（获取、发布、删除）|
-| 群设置（自动审批、入群公告、坦白说、成员邀请、匿名聊天）|
-| 处理入群申请、移除群员 |
+|群相关|
+|:-|
+|完整群列表、完整群成员列表|
+|群员权限获取|
+|禁言群员、全员禁言、禁言时间获取|
+|群公告管理（获取、发布、删除）|
+|群设置（自动审批、入群公告、坦白说、成员邀请、匿名聊天）|
+|处理入群申请、移除群员|
 
-| 好友相关 |
-|:----|
-| 完整好友列表 |
-| 处理新好友申请 |
-
+|好友相关|
+|:-|
+|完整好友列表|
+|处理新好友申请|
 </details>
 
-#### 不会支持的协议：
+#### 不会支持的协议
 - 点赞
 - 收付款
 - 主动添加好友
@@ -80,7 +78,6 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 ### 开发者
 #### 使用 mirai-console 服务端，为 mirai-console 开发插件
 Mirai 官方支持 SDK 列表：
-
 - `Java`、`Kotlin` 等 JVM 语言：为 [mirai-console](https://github.com/mamoe/mirai-console) 直接编写插件并与其他插件开发者合作共享。
 - `Kotlin Script`：[mirai-kts](https://github.com/iTXTech/mirai-kts) 支持使用 `kts` 编写插件，享受 `Kotlin` 带来的一切便利。（**仅 OpenJDK 8 以上环境，不支持 Android**）
 - `C`、`C++` 等原生语言：[mirai-native](https://github.com/iTXTech/mirai-native) 支持酷 Q 插件在 Mirai 上运行。**(仅限 `Windows 32 位 JRE`，支持 `Wine`)**
@@ -88,14 +85,12 @@ Mirai 官方支持 SDK 列表：
 - `HTTP`：使用由 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 提供的 HTTP 接口进行接入。
 
 <details>
-  <summary>社区支持的 SDK 列表</summary>
+<summary>社区支持的 SDK 列表</summary>
 
 基于 `mirai-core`（独立使用）：
 - `Lua`：[lua-mirai](https://github.com/only52607/lua-mirai) 基于 mirai-core 的 Lua SDK，并提供了 Java 扩展支持，可在 Lua 中调用 Java 代码开发机器人。
 
-
 基于 `mirai-http-api`（配合 [mirai-console](https://github.com/mamoe/mirai-console)）：
-
 - `Python`：[Graia Framework](https://github.com/GraiaProject/Application) 基于 `mirai-api-http` 的机器人开发框架。
 - `JavaScript` (`Node.js`)：[node-mirai](https://github.com/RedBeanN/node-mirai) mirai 的 Node.js SDK。
 - `Go`：[gomirai](https://github.com/Logiase/gomirai) 基于 mirai-api-http 的 GoLang SDK。
@@ -107,12 +102,10 @@ Mirai 官方支持 SDK 列表：
 - `TypeScript`：[mirai-ts](https://github.com/YunYouJun/mirai-ts) mirai-api-http 的 TypeScript SDK，附带声明文件，拥有良好的注释和类型提示，也可作为 JavaScript SDK 使用。
 - `易语言`：[e-mirai](https://github.com/only52607/e-mirai) mirai-api-http 的 易语言 SDK，使用全中文环境开发插件，适合编程新手使用。
 - `.Net/C#`：[Hyperai](https://github.com/theGravityLab/ProjHyperai) 从 mirai-api-http 对接到机器人开发框架再到开箱即用的插件式机器人程序一应俱全。
-
 </details>
 
 #### 使用 mirai-core 为第三方依赖库引入项目
 Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
-
 - `Kotlin` 简略版：[Mirai Guide - Quick Start](/docs/guide_quick_start.md)
 - `Kotlin` 新手版：[Mirai Guide - Getting Started](/docs/guide_getting_started.md)
 - `Java`：查看上述 Demos。
@@ -134,24 +127,23 @@ Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
 ## 许可证
 协议原版权归属腾讯科技股份有限公司所有。本项目其他代码遵守 **AGPLv3**。
 
-其中部分要求:  
-
+其中部分要求:
 - （见 LICENSE 第 13 节）尽管本许可协议有其他规定，但如果您修改本程序，则修改后的版本必须显着地为所有通过计算机网络与它进行远程交互的用户（如果您的版本支持这种交互）提供从网络服务器通过一些标准或惯用的软件复制方法**免费**访问相应的**源代码**的机会。
 - （见 LICENSE 第 4 节）您可以免费或收费地传递这个项目的源代码或目标代码（即编译结果），**但前提是提供明显的版权声明**（您需要标注本 `GitHub` 项目地址）。
 
-------
+---
 
     Copyright (C) 2019-2020 Mamoe Technologies and mirai contributors
-    
+
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
     published by the Free Software Foundation, either version 3 of the
     License, or (at your option) any later version.
-    
+
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU Affero General Public License for more details.
-    
+
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
