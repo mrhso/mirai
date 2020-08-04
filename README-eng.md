@@ -8,7 +8,7 @@ Mirai is designed to handle all sorts of messaging works that can be automatical
 ## Start
 **Development document**： [docs/mirai.md](docs/mirai.md)
 
-[CHANGELOG](https://github.com/mrhso/mirai/blob/moritaka/CHANGELOG.md)
+[CHANGELOG](https://github.com/mrhso/mirai-moritaka/blob/moritaka/CHANGELOG.md)
 
 ### Use as a framework
 
