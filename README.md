@@ -32,10 +32,10 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 - Mirai 由整个开源社区维护，并不是属于某个个体的作品，所有贡献者都享有其作品的著作权。
 
 ### 许可证
-协议原版权归属腾讯科技股份有限公司所有。本项目其他代码遵守 [**AGPLv3 with Mamoe Exceptions**](https://github.com/mamoe/mirai/blob/master/LICENSE)，在 [**AGPLv3**](https://www.gnu.org/licenses/agpl-3.0.html) 的基础之上添加额外条件。
+协议原版权归属腾讯科技股份有限公司所有。本项目其他代码遵守 [**AGPLv3 with Mamoe Exceptions**](https://github.com/mrhso/mirai-moritaka/blob/moritaka/LICENSE)，在 [**AGPLv3**](https://www.gnu.org/licenses/agpl-3.0.html) 的基础之上添加额外条件。
 
 如果与 `AGPLv3` 冲突，则以 `AGPLv3 with Mamoe Exceptions` 的如下额外条件为准。
-- **所有衍生软件*（间接或直接接触到 Mirai, 即使没有修改 Mirai 源码的软件）*必须使用相同协议（AGPLv3 with Mamoe Exceptions）开源。**
+- **所有衍生软件（间接或直接接触到 Mirai, 即使没有修改 Mirai 源码的软件）必须使用相同协议（AGPLv3 with Mamoe Exceptions）开源。**
 - **本软件禁止用于一切商业活动。**
 - **本软件禁止收费传递, 或在传递时不提供源代码。**
 
