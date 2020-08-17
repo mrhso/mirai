@@ -35,9 +35,9 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 协议原版权归属腾讯科技股份有限公司所有。本项目其他代码遵守 [**AGPLv3 with Mamoe Exceptions**](https://github.com/mrhso/mirai-moritaka/blob/moritaka/LICENSE)，在 [**AGPLv3**](https://www.gnu.org/licenses/agpl-3.0.html) 的基础之上添加额外条件。
 
 如果与 `AGPLv3` 冲突，则以 `AGPLv3 with Mamoe Exceptions` 的如下额外条件为准。
-- **所有衍生软件（间接或直接接触到 Mirai, 即使没有修改 Mirai 源码的软件）必须使用相同协议（AGPLv3 with Mamoe Exceptions）开源。**
+- **所有衍生软件必须使用相同协议（AGPLv3 with Mamoe Exceptions）开源。**（衍生软件：即使没有修改 Mirai 源码，但直接或间接接触到 Mirai 的软件）
 - **本软件禁止用于一切商业活动。**
-- **本软件禁止收费传递, 或在传递时不提供源代码。**
+- **本软件禁止收费传递，或在传递时不提供源代码。**
 
 ## 协议支持
 <details>
@@ -91,7 +91,7 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 #### 使用 mirai-console 服务端，为 mirai-console 开发插件
 Mirai 官方支持 SDK 列表：
 - `Java`、`Kotlin` 等 JVM 语言：为 [mirai-console](https://github.com/mamoe/mirai-console) 直接编写插件并与其他插件开发者合作共享。
-- `Kotlin Script`：[mirai-kts](https://github.com/iTXTech/mirai-kts) 支持使用 `kts` 编写插件，享受 `Kotlin` 带来的一切便利。（**仅 OpenJDK 8 以上环境，不支持 Android**）
+- `Kotlin Script`：[mirai-kts](https://github.com/iTXTech/mirai-kts) 支持使用 `kts` 编写插件，享受 `Kotlin` 带来的一切便利。**（仅 OpenJDK 8 以上环境，不支持 Android）**
 - `C`、`C++` 等原生语言：[mirai-native](https://github.com/iTXTech/mirai-native) 支持酷 Q 插件在 Mirai 上运行。**(仅限 `Windows 32 位 JRE`，支持 `Wine`)**
 - `JavaScript`：[mirai-js](https://github.com/iTXTech/mirai-js) 支持使用 `JavaScript` 编写插件并**直接**与 Mirai 交互。
 - `HTTP`：使用由 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 提供的 HTTP 接口进行接入。
@@ -123,7 +123,7 @@ Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
 - `Java`：查看上述 Demos。
 
 ### 使用者
-- [mirai-console](https://github.com/mamoe/mirai-console) 支持插件的控制台服务端，支持 PC 和 Android 平台。（**本模块正在开发中**）
+- [mirai-console](https://github.com/mamoe/mirai-console) 支持插件的控制台服务端，支持 PC 和 Android 平台。**（本模块正在开发中）**
 
 #### 从其他平台迁移
 - 酷 Q 的插件可以在 mirai 中加载，详见 [Mirai-Native](https://github.com/iTXTech/mirai-native)。
