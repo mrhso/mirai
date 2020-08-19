@@ -127,7 +127,7 @@ Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
 
 #### 从其他平台迁移
 - 酷 Q 的插件可以在 mirai 中加载，详见 [Mirai-Native](https://github.com/iTXTech/mirai-native)。
-- 使用 `酷 Q HTTP API` 的插件将可以在 mirai 中加载，`Mirai-CQ-Adapter` 正在进行中。
+- 使用 `酷 Q HTTP API` 的插件将可以在 mirai 中通过 `CQHTTP Mirai` 加载，详见 [cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)。
 
 ## 鸣谢
 > [IntelliJ IDEA](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一个在各个方面都最大程度地提高开发人员的生产力的 IDE，适用于 JVM 平台语言。
