@@ -6,7 +6,7 @@
 
 Mirai 是一个在全平台下运行，提供 QQ Android 协议支持的高效率机器人库。
 
-Mirai-moritaka 为 Ishisashi 维护的分支。因为含有 Ishisashi 自身的想法，因此单列分支。
+Mirai-Moritaka 为 Ishisashi 维护的分支。因为含有 Ishisashi 自身的想法，因此单列分支。
 
 原项目的名字来源于
 <p><a href = "http://www.kyotoanimation.co.jp/">京都动画</a>作品<a href = "https://zh.moegirl.org/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9">《境界的彼方》</a>的<a href = "https://zh.moegirl.org/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5">栗山未来（Kuriyama <b>Mirai</b>）</a>、</p>
@@ -16,7 +16,7 @@ Mirai-moritaka 为 Ishisashi 维护的分支。因为含有 Ishisashi 自身的�
 该分支的名称来源于《东京放课后》的犬冢戍孝（<ruby>犬塚<rp>（</rp><rt>Inuzuka</rt><rp>）</rp>モリタカ<rp>（</rp><rt>Moritaka</rt><rp>）</rp></ruby>）。
 </div>
 
-## Mirai-moritaka
+## Mirai-Moritaka
 **[English](README-eng.md)**
 
 **QQ Android** 协议支持库与高效率的机器人框架。
@@ -50,8 +50,8 @@ Mirai 在各个平台均没有任何所谓官方交流群或论坛，请不要�
     You should have received a copy of the GNU Affero General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-`mirai` 采用 `AGPLv3` 协议开源。为了整个社区的良性发展，我们**强烈建议**您做到以下几点：
-- **间接接触（包括但不限于使用 `httpapi` 或跨进程技术）到 `mirai` 的软件使用 `AGPLv3` 开源。**
+`Mirai` 采用 `AGPLv3` 协议开源。为了整个社区的良性发展，我们**强烈建议**您做到以下几点：
+- **间接接触（包括但不限于使用 `HTTP API` 或跨进程技术）到 `Mirai` 的软件使用 `AGPLv3` 开源。**
 - **不鼓励、不支持一切商业使用。**
 
 鉴于项目的特殊性，开发团队可能在任何时间**停止更新**或**删除项目**。
@@ -121,7 +121,7 @@ Mirai 官方支持 SDK 列表：
 
 基于 `mirai-http-api`（配合 [mirai-console](https://github.com/mamoe/mirai-console)）：
 - `Python`：[Graia Framework](https://github.com/GraiaProject/Application) 基于 `mirai-api-http` 的机器人开发框架。
-- `JavaScript` (`Node.js`)：[node-mirai](https://github.com/RedBeanN/node-mirai) mirai 的 Node.js SDK。
+- `JavaScript` (`Node.js`)：[node-mirai](https://github.com/RedBeanN/node-mirai) Mirai 的 Node.js SDK。
 - `Go`：[gomirai](https://github.com/Logiase/gomirai) 基于 mirai-api-http 的 GoLang SDK。
 - `Mozilla Rhino`：[mirai-rhinojs-sdk](https://github.com/StageGuard/mirai-rhinojs-sdk) 为基于 Rhino（如 Auto.js 等安卓 app 或运行环境）的 JavaScript 提供简单易用的 SDK。
 - `C++`：[mirai-cpp](https://github.com/cyanray/mirai-cpp) mirai-http-api 的 C++ 封装，方便使用 C++ 开发 mirai-http-api 插件。
@@ -144,8 +144,8 @@ Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
 - [awesome-mirai](https://github.com/project-mirai/awsome-mirai/blob/master/README.md) Mirai 相关项目合集。
 
 #### 从其他平台迁移
-- 酷 Q 的插件可以在 `mirai` 中加载，详见 [Mirai Native](https://github.com/iTXTech/mirai-native)。
-- 使用 `酷 Q HTTP API` 的插件将可以在 `mirai` 中通过 `CQHTTP Mirai` 加载，详见 [cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)。
+- 酷 Q 的插件可以在 `Mirai` 中加载，详见 [Mirai Native](https://github.com/iTXTech/mirai-native)。
+- 使用 `酷 Q HTTP API` 的插件将可以在 `Mirai` 中通过 `CQHTTP Mirai` 加载，详见 [cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)。
 
 ## 鸣谢
 > [IntelliJ IDEA](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一个在各个方面都最大程度地提高开发人员的生产力的 IDE，适用于 JVM 平台语言。
