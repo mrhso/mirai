@@ -30,14 +30,31 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 - Mirai 是完全免费且开放源代码的软件，仅供学习和娱乐用途使用。
 - Mirai 不会通过任何方式强制收取费用，或对使用者提出物质条件。
 - Mirai 由整个开源社区维护，并不是属于某个个体的作品，所有贡献者都享有其作品的著作权。
+```
+Mirai 在各个平台均没有任何所谓官方交流群或论坛，请不要轻信任何所谓学习、交流群，不造谣、不传谣、不信谣从我做起。
+```
 
 ### 许可证
-协议原版权归属腾讯科技股份有限公司所有。本项目其他代码遵守 [**AGPLv3 with Mamoe Exceptions**](https://github.com/mrhso/mirai-moritaka/blob/moritaka/LICENSE)，在 [**AGPLv3**](https://www.gnu.org/licenses/agpl-3.0.html) 的基础之上添加额外条件。
+    Copyright (C) 2019-2020 Mamoe Technologies and contributors.
 
-如果与 `AGPLv3` 冲突，则以 `AGPLv3 with Mamoe Exceptions` 的如下额外条件为准。
-- **所有衍生软件必须使用相同协议（AGPLv3 with Mamoe Exceptions）开源。**（衍生软件：即使没有修改 Mirai 源码，但直接或间接接触到 Mirai 的软件）
-- **本软件禁止用于一切商业活动。**
-- **本软件禁止收费传递，或在传递时不提供源代码。**
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+`mirai` 采用 `AGPLv3` 协议开源。为了整个社区的良性发展，我们**强烈建议**您做到以下几点：
+- **间接接触（包括但不限于使用 `httpapi` 或跨进程技术）到 `mirai` 的软件使用 `AGPLv3` 开源。**
+- **不鼓励、不支持一切商业使用。**
+
+鉴于项目的特殊性，开发团队可能在任何时间**停止更新**或**删除项目**。
 
 ## 协议支持
 <details>
@@ -85,7 +102,7 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 - **开发文档**：[docs/mirai.md](docs/mirai.md)
 - **常见问题**：[docs/FAQ.md](docs/FAQ.md)
 - **更新日志**：[CHANGELOG](https://github.com/mrhso/mirai-moritaka/blob/moritaka/CHANGELOG.md)
-- **贡献**：[CONTRIBUTING](CONTRIBUTING.md)
+- **贡献（原项目）**：[CONTRIBUTING](CONTRIBUTING.md)
 
 ### 开发者
 #### 使用 mirai-console 服务端，为 mirai-console 开发插件
@@ -124,10 +141,11 @@ Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
 
 ### 使用者
 - [mirai-console](https://github.com/mamoe/mirai-console) 支持插件的控制台服务端，支持 PC 和 Android 平台。**（本模块正在开发中）**
+- [awesome-mirai](https://github.com/project-mirai/awsome-mirai/blob/master/README.md) mirai 相关项目合集。
 
 #### 从其他平台迁移
-- 酷 Q 的插件可以在 mirai 中加载，详见 [Mirai-Native](https://github.com/iTXTech/mirai-native)。
-- 使用 `酷 Q HTTP API` 的插件将可以在 mirai 中通过 `CQHTTP Mirai` 加载，详见 [cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)。
+- 酷 Q 的插件可以在 `mirai` 中加载，详见 [Mirai Native](https://github.com/iTXTech/mirai-native)。
+- 使用 `酷 Q HTTP API` 的插件将可以在 `mirai` 中通过 `CQHTTP Mirai` 加载，详见 [cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)。
 
 ## 鸣谢
 > [IntelliJ IDEA](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一个在各个方面都最大程度地提高开发人员的生产力的 IDE，适用于 JVM 平台语言。
