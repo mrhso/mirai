@@ -141,7 +141,7 @@ Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
 
 ### 使用者
 - [mirai-console](https://github.com/mamoe/mirai-console) 支持插件的控制台服务端，支持 PC 和 Android 平台。**（本模块正在开发中）**
-- [awesome-mirai](https://github.com/project-mirai/awsome-mirai/blob/master/README.md) mirai 相关项目合集。
+- [awesome-mirai](https://github.com/project-mirai/awsome-mirai/blob/master/README.md) Mirai 相关项目合集。
 
 #### 从其他平台迁移
 - 酷 Q 的插件可以在 `mirai` 中加载，详见 [Mirai Native](https://github.com/iTXTech/mirai-native)。
