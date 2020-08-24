@@ -150,7 +150,6 @@ internal fun MessageChain.toRichTextElems(forGroup: Boolean, withGeneralFlags: B
                     when (val source = it.source) {
                         is OnlineMessageSource.Incoming.FromGroup -> {
                             transformOneMessage(At(source.sender))
-                            transformOneMessage(PlainText(" "))
                         }
                     }
                 }
