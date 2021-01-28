@@ -9,7 +9,7 @@ Mirai 是一个在全平台下运行，提供 QQ Android 协议支持的高效�
 Mirai-Moritaka 为 Ishisashi 维护的分支。因为含有 Ishisashi 自身的想法，因此单列分支。
 
 原项目的名字来源于
-<p><a href = "http://www.kyotoanimation.co.jp/">京都动画</a>作品<a href = "https://zh.moegirl.org/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9">《境界的彼方》</a>的<a href = "https://zh.moegirl.org/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5">栗山未来（Kuriyama <b>Mirai</b>）</a>、</p>
+<p><a href = "http://www.kyotoanimation.co.jp/">京都动画</a>作品<a href = "https://zh.moegirl.org.cn/zh-hans/%E5%A2%83%E7%95%8C%E7%9A%84%E5%BD%BC%E6%96%B9">《境界的彼方》</a>的<a href = "https://zh.moegirl.org.cn/zh-hans/%E6%A0%97%E5%B1%B1%E6%9C%AA%E6%9D%A5">栗山未来（Kuriyama <b>Mirai</b>）</a>、</p>
 <p><a href = "https://www.crypton.co.jp/">CRYPTON</a> 以<a href = "https://www.crypton.co.jp/miku_eng">初音未来</a>为代表的创作与活动<a href = "https://magicalmirai.com/2019/index_en.html">（Magical <b>Mirai</b>）</a>。</p>
 图标以及形象由画师 <a href = "https://github.com/DazeCake">DazeCake</a> 绘制。
 
@@ -30,9 +30,6 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 - Mirai 是完全免费且开放源代码的软件，仅供学习和娱乐用途使用。
 - Mirai 不会通过任何方式强制收取费用，或对使用者提出物质条件。
 - Mirai 由整个开源社区维护，并不是属于某个个体的作品，所有贡献者都享有其作品的著作权。
-```
-Mirai 在各个平台均没有任何所谓官方交流群或论坛，请不要轻信任何所谓学习、交流群，不造谣、不传谣、不信谣从我做起。
-```
 
 ### 许可证
     Copyright (C) 2019-2020 Mamoe Technologies and contributors.
@@ -56,37 +53,55 @@ Mirai 在各个平台均没有任何所谓官方交流群或论坛，请不要�
 
 鉴于项目的特殊性，开发团队可能在任何时间**停止更新**或**删除项目**。
 
+### **Mirai 的形象图及项目图标都拥有著作权保护。**
+**在未经过允许的情况下，任何人都不可以使用形象图和图标，或本文初的有关 Mirai 名称来历的介绍原文，用于商业用途或是放置在项目首页，或其他未许可的行为。**
+
+### 衍生软件需声明引用
+- 若引用 Mirai 发布的软件包而不修改 Mirai，则衍生项目需在描述的任意部位提及使用 Mirai。
+- 若修改 Mirai 源代码再发布，**或参考 Mirai 内部实现发布另一个项目**，则衍生项目必须在**文章首部**或 'Mirai' 相关内容**首次出现**的位置**明确声明**来源于 Mirai 源仓库 (`https://github.com/mamoe/mirai`)。不得扭曲或隐藏免费且开源的事实。
+
 ## 协议支持
 <details>
 <summary>支持的协议列表</summary>
 
-|消息相关|支持|
-|:-|:-|
-|文字|群聊、好友、临时会话|
-|原生表情|群聊、好友、临时会话|
-|图片上传、发送、解析（最大 20 MiB）|群聊、好友、临时会话|
-|图片下载|群聊、好友、临时会话|
-|XML、JSON 等富文本消息|群聊、好友、临时会话|
-|长消息（5000 字符、50 图片）|群聊|
-|引用回复|群聊、好友、临时会话|
-|合并转发（最大 200 条）|群聊|
-|撤回|群聊、好友、临时会话|
-|At（含 At 全体成员）|群聊|
-|撤回群员消息|群聊|
+**消息相关**
+- 文字
+- 原生表情
+- 商城表情
+- 戳一戳
+- 图片（自定义表情）
+- XML、JSON 等富文本消息
+- 长消息（5000 字符 + 50 图片）
+- 引用回复
+- 合并转发
+- 撤回
+- 提及群员
+- 提及全体成员
+- 语音
+- 闪照
+- 撤回群员消息
+- 自定义消息
 
-|群相关|
-|:-|
-|完整群列表、完整群成员列表|
-|群员权限获取|
-|禁言群员、全员禁言、禁言时间获取|
-|群公告管理（获取、发布、删除）|
-|群设置（自动审批、入群公告、坦白说、成员邀请、匿名聊天）|
-|处理入群申请、移除群员|
+**群相关**
+- 群列表
+- 成员列表
+- 群员权限
+- 禁言
+- 全体禁言
+- 群公告管理
+- 群设置（自动审批、入群公告、坦白说、成员邀请、匿名聊天）
+- 处理入群申请
+- 移除群员
 
-|好友相关|
-|:-|
-|完整好友列表|
-|处理新好友申请|
+**好友相关**
+- 完整好友列表
+- 处理新好友申请
+- 删除好友
+
+**其他客户端**
+- 同步其他客户端的消息
+- 向其他客户端发送消息
+
 </details>
 
 #### 不会支持的协议
@@ -97,55 +112,7 @@ Mirai 在各个平台均没有任何所谓官方交流群或论坛，请不要�
 **一切开发旨在学习，请勿用于非法用途！**
 
 ## 开始
-### 文档
-- **快速上手**：[quickstart](docs/guide_quick_start.md)
-- **开发文档**：[docs/mirai.md](docs/mirai.md)
-- **常见问题**：[docs/FAQ.md](docs/FAQ.md)
-- **更新日志**：[CHANGELOG](https://github.com/mrhso/mirai-moritaka/blob/moritaka/CHANGELOG.md)
-- **贡献（原项目）**：[CONTRIBUTING](CONTRIBUTING.md)
-
-### 开发者
-#### 使用 mirai-console 服务端，为 mirai-console 开发插件
-Mirai 官方支持 SDK 列表：
-- `Java`、`Kotlin` 等 JVM 语言：为 [mirai-console](https://github.com/mamoe/mirai-console) 直接编写插件并与其他插件开发者合作共享。
-- `Kotlin Script`：[mirai-kts](https://github.com/iTXTech/mirai-kts) 支持使用 `kts` 编写插件，享受 `Kotlin` 带来的一切便利。**（仅 OpenJDK 8 以上环境，不支持 Android）**
-- `C`、`C++` 等原生语言：[mirai-native](https://github.com/iTXTech/mirai-native) 支持酷 Q 插件在 Mirai 上运行。**(仅限 `Windows 32 位 JRE`，支持 `Wine`)**
-- `JavaScript`：[mirai-js](https://github.com/iTXTech/mirai-js) 支持使用 `JavaScript` 编写插件并**直接**与 Mirai 交互。
-- `HTTP`：使用由 [mirai-api-http](https://github.com/mamoe/mirai-api-http) 提供的 HTTP 接口进行接入。
-
-<details>
-<summary>社区支持的 SDK 列表</summary>
-
-基于 `mirai-core`（独立使用）：
-- `Lua`：[lua-mirai](https://github.com/only52607/lua-mirai) 基于 mirai-core 的 Lua SDK，并提供了 Java 扩展支持，可在 Lua 中调用 Java 代码开发机器人。
-
-基于 `mirai-http-api`（配合 [mirai-console](https://github.com/mamoe/mirai-console)）：
-- `Python`：[Graia Framework](https://github.com/GraiaProject/Application) 基于 `mirai-api-http` 的机器人开发框架。
-- `JavaScript` (`Node.js`)：[node-mirai](https://github.com/RedBeanN/node-mirai) Mirai 的 Node.js SDK。
-- `Go`：[gomirai](https://github.com/Logiase/gomirai) 基于 mirai-api-http 的 GoLang SDK。
-- `Mozilla Rhino`：[mirai-rhinojs-sdk](https://github.com/StageGuard/mirai-rhinojs-sdk) 为基于 Rhino（如 Auto.js 等安卓 app 或运行环境）的 JavaScript 提供简单易用的 SDK。
-- `C++`：[mirai-cpp](https://github.com/cyanray/mirai-cpp) mirai-http-api 的 C++ 封装，方便使用 C++ 开发 mirai-http-api 插件。
-- `C++`：[miraipp](https://github.com/Chlorie/miraipp-template) mirai-http-api 的另一个 C++ 封装，使用现代 C++ 特性，并提供了较完善的说明文档。
-- `C#`：[Mirai-CSharp](https://github.com/Executor-Cheng/Mirai-CSharp) 基于 mirai-api-http 的 C# SDK。
-- `Rust`：[mirai-rs](https://github.com/HoshinoTented/mirai-rs) mirai-http-api 的 Rust 封装。
-- `TypeScript`：[mirai-ts](https://github.com/YunYouJun/mirai-ts) mirai-api-http 的 TypeScript SDK，附带声明文件，拥有良好的注释和类型提示，也可作为 JavaScript SDK 使用。
-- `易语言`：[e-mirai](https://github.com/only52607/e-mirai) mirai-api-http 的 易语言 SDK，使用全中文环境开发插件，适合编程新手使用。
-- `.Net/C#`：[Hyperai](https://github.com/theGravityLab/ProjHyperai) 从 mirai-api-http 对接到机器人开发框架再到开箱即用的插件式机器人程序一应俱全。
-</details>
-
-#### 使用 mirai-core 为第三方依赖库引入项目
-Demos：[mirai-demos](https://github.com/mamoe/mirai-demos)
-- `Kotlin` 简略版：[Mirai Guide - Quick Start](/docs/guide_quick_start.md)
-- `Kotlin` 新手版：[Mirai Guide - Getting Started](/docs/guide_getting_started.md)
-- `Java`：查看上述 Demos。
-
-### 使用者
-- [mirai-console](https://github.com/mamoe/mirai-console) 支持插件的控制台服务端，支持 PC 和 Android 平台。**（本模块正在开发中）**
-- [awesome-mirai](https://github.com/project-mirai/awsome-mirai/blob/master/README.md) Mirai 相关项目合集。
-
-#### 从其他平台迁移
-- 酷 Q 的插件可以在 `Mirai` 中加载，详见 [Mirai Native](https://github.com/iTXTech/mirai-native)。
-- 使用 `酷 Q HTTP API` 的插件将可以在 `Mirai` 中通过 `CQHTTP Mirai` 加载，详见 [cqhttp-mirai](https://github.com/yyuueexxiinngg/cqhttp-mirai)。
+- 开发文档: [docs](docs/README.md)
 
 ## 鸣谢
 > [IntelliJ IDEA](https://zh.wikipedia.org/zh-hans/IntelliJ_IDEA) 是一个在各个方面都最大程度地提高开发人员的生产力的 IDE，适用于 JVM 平台语言。
