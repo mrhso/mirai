@@ -233,7 +233,7 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
     override suspend fun getOnlineOtherClientsList(bot: Bot, mayIncludeSelf: Boolean): List<OtherClientInfo> {
         bot.asQQAndroidBot()
         val response = bot.network.run {
-            StatSvc.GetDevLoginInfo(bot.client).sendAndExpect<StatSvc.GetDevLoginInfo.Response>()
+            StatSvc.GetDevLoginInfo(bot.client).sendAndExpect()
         }
 
         fun SvcDevLoginInfo.toOtherClientInfo() = OtherClientInfo(
@@ -360,7 +360,7 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
                 groupCode,
                 messageIds,
                 messageInternalIds
-            ).sendAndExpect<PbMessageSvc.PbMsgWithDraw.Response>()
+            ).sendAndExpect()
         }
 
         response is PbMessageSvc.PbMsgWithDraw.Response.Success
@@ -695,9 +695,9 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
         return jsonText?.let { json.decodeFromString(GroupHonorListData.serializer(), it) }
     }
 
-    internal suspend fun uploadGroupMessageHighway(
+    internal suspend fun uploadMessageHighway(
         bot: Bot,
-        groupCode: Long,
+        sendMessageHandler: SendMessageHandler<*>,
         message: Collection<ForwardMessage.INode>,
         isLong: Boolean,
     ): String = with(bot.asQQAndroidBot()) {
@@ -705,14 +705,12 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
             it.messageChain.ensureSequenceIdAvailable()
         }
 
-        val group = getGroupOrFail(groupCode)
-
         val sequenceId = client.atomicNextMessageSequenceId()
 
-        val data = message.calculateValidationDataForGroup(
+        val data = message.calculateValidationData(
             sequenceId = sequenceId,
             random = Random.nextInt().absoluteValue,
-            group
+            sendMessageHandler
         )
 
         val response = network.run {
@@ -720,7 +718,7 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
                 buType = if (isLong) 1 else 2,
                 client = bot.client,
                 messageData = data,
-                dstUin = Mirai.calculateGroupUinByGroupCode(groupCode)
+                dstUin = sendMessageHandler.targetUin
             ).sendAndExpect<MultiMsg.ApplyUp.Response>()
         }
 
@@ -740,7 +738,7 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
                     msgUpReq = listOf(
                         LongMsg.MsgUpReq(
                             msgType = 3, // group
-                            dstUin = Mirai.calculateGroupUinByGroupCode(groupCode),
+                            dstUin = sendMessageHandler.targetUin,
                             msgId = 0,
                             msgUkey = response.proto.msgUkey,
                             needCache = 0,
@@ -755,8 +753,8 @@ internal open class MiraiImpl : IMirai, LowLevelApiAccessor {
                         bot = bot,
                         resource = resource,
                         kind = when (isLong) {
-                            true -> ResourceKind.GROUP_LONG_MESSAGE
-                            false -> ResourceKind.GROUP_FORWARD_MESSAGE
+                            true -> ResourceKind.LONG_MESSAGE
+                            false -> ResourceKind.FORWARD_MESSAGE
                         },
                         commandId = 27,
                         initialTicket = response.proto.msgSig

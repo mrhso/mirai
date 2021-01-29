@@ -33,7 +33,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 internal interface MessageSourceInternal {
     @Transient
-    val sequenceIds: IntArray
+    val sequenceIds: IntArray // ids
 
     @Transient
     val internalIds: IntArray // randomId
@@ -49,25 +49,15 @@ internal interface MessageSourceInternal {
 }
 
 @Suppress("RedundantSuspendModifier", "unused")
-internal suspend inline fun MessageSource.ensureSequenceIdAvailable() {
-    // obsolete but keep for future
-    return
-    /*
-    if (this is MessageSourceToGroupImpl) {
-        this.ensureSequenceIdAvailable()
-    }*/
+internal suspend fun MessageSource.ensureSequenceIdAvailable() {
+    if (this is OnlineMessageSourceToGroupImpl) {
+        ensureSequenceIdAvailable()
+    }
 }
 
 @Suppress("RedundantSuspendModifier", "unused")
 internal suspend inline fun Message.ensureSequenceIdAvailable() {
-    // no suspend.
-
-    // obsolete but keep for future
-    return
-    /*
-    if (this is MessageSourceToGroupImpl) {
-        this.ensureSequenceIdAvailable()
-    }*/
+    (this as? MessageChain)?.sourceOrNull?.ensureSequenceIdAvailable()
 }
 
 @Serializable(OnlineMessageSourceFromFriendImpl.Serializer::class)
