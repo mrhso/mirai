@@ -49,12 +49,9 @@ public object AtAll :
     }
 
 
-    // 自动为消息补充 " "
+    // 空格交给用家去处理
     @JvmSynthetic
     public override fun followedBy(tail: Message): MessageChain {
-        if (tail is PlainText && tail.content.startsWith(' ')) {
-            return super<MessageContent>.followedBy(tail)
-        }
-        return super<MessageContent>.followedBy(PlainText(" ")) + tail
+        return super<MessageContent>.followedBy(tail)
     }
 }

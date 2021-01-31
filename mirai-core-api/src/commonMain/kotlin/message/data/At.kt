@@ -59,12 +59,9 @@ public data class At(
         public const val SERIAL_NAME: String = "At"
     }
 
-    // 自动为消息补充 " "
+    // 空格交给用家去处理
     public override fun followedBy(tail: Message): MessageChain {
-        if (tail is PlainText && tail.content.startsWith(' ')) {
-            return super<MessageContent>.followedBy(tail)
-        }
-        return super<MessageContent>.followedBy(PlainText(" ")) + tail
+        return super<MessageContent>.followedBy(tail)
     }
 }
 
