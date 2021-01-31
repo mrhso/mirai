@@ -32,7 +32,7 @@ Mirai 既可以作为项目中的 QQ 协议支持库，也可以作为单独的�
 - Mirai 由整个开源社区维护，并不是属于某个个体的作品，所有贡献者都享有其作品的著作权。
 
 ### 许可证
-    Copyright (C) 2019-2020 Mamoe Technologies and contributors.
+    Copyright (C) 2019-2021 Mamoe Technologies and contributors.
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as

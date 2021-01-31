@@ -19,7 +19,6 @@ import net.mamoe.mirai.internal.network.protocol.packet.OutgoingPacketFactory
 import net.mamoe.mirai.internal.network.protocol.packet.buildOutgoingUniPacket
 import net.mamoe.mirai.internal.utils.io.serialization.readProtoBuf
 import net.mamoe.mirai.internal.utils.io.serialization.writeProtoBuf
-import net.mamoe.mirai.utils.toLongUnsigned
 import kotlin.random.Random
 import kotlin.random.nextInt
 
@@ -39,15 +38,15 @@ internal class ImgStore {
             uin: Long,
             groupCode: Long,
             md5: ByteArray,
-            size: Int,
+            size: Long,
             picWidth: Int = 0, // not orthodox
             picHeight: Int = 0, // not orthodox
-            picType: Int = 1000,
+            picType: Int = 2001,
             fileId: Long = 0,
             filename: String = getRandomString(16) + ".gif", // make server happier
             srcTerm: Int = 5,
             platformType: Int = 9,
-            buType: Int = 1,
+            buType: Int = 2,
             appPicType: Int = 1006,
             originalPic: Int = 0
         ): OutgoingPacket = buildOutgoingUniPacket(client) {
@@ -61,7 +60,7 @@ internal class ImgStore {
                             groupCode = groupCode,
                             srcUin = uin,
                             fileMd5 = md5,
-                            fileSize = size.toLongUnsigned(),
+                            fileSize = size,
                             fileId = fileId,
                             fileName = filename,
                             picWidth = picWidth,
